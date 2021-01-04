@@ -28,7 +28,7 @@ getUserInfo() {
     })
 
     // }渲染用户信息
-    function renderAvater() {
+    function renderAvater(user) {
         var name = user.nickname || user.username;
         $('#welcome').html('欢迎nbsp;nbsp;' + name);
         if (user.user_pic !== null) {
